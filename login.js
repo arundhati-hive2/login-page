@@ -3,7 +3,7 @@ const messageEl = document.getElementById("message");
 const attemptsEl = document.getElementById("attempts");
 
 let attempts = 0;
-
+ 
 boxes.forEach(function (box, index) {
   // Accept a single digit then jump to the next box
   box.addEventListener("input", function () {
