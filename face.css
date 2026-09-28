@@ -2,6 +2,7 @@
   --bg: #e7d3b8;         /* warm sand, solid background */
   --card: #fbf5ec;       /* soft cream card */
   --ink: #3a2b1a;        /* deep warm brown text */
+  --muted: #8a7357;      /* muted brown for secondary text */
   --accent: #c1521d;     /* terracotta */
   --accent-2: #e2900f;   /* saffron */
   --ok: #2f7d4f;
@@ -37,12 +38,17 @@ body {
   color: var(--accent);
 }
 
-#password {
-  width: 100%;
-  height: 64px;
-  font-size: 30px;
+.digits {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+}
+
+.digit {
+  width: 58px;
+  height: 68px;
+  font-size: 32px;
   text-align: center;
-  letter-spacing: 16px;
   font-family: inherit;
   color: var(--ink);
   background: #fff;
@@ -52,17 +58,23 @@ body {
   transition: border-color 0.2s, box-shadow 0.2s;
 }
 
-#password:focus {
+.digit:focus {
   border-color: var(--accent);
   box-shadow: 0 0 0 3px rgba(226, 144, 15, 0.25);   /* saffron focus glow */
 }
 
 #message {
   min-height: 24px;
-  margin: 24px 0 0;
+  margin: 24px 0 8px;
   font-size: 18px;
   font-weight: 600;
 }
 
 #message.ok { color: var(--ok); }
 #message.bad { color: var(--bad); }
+
+#attempts {
+  color: var(--muted);
+  font-size: 15px;
+  margin: 0;
+}
