@@ -1,0 +1,1 @@
+const CORRECT_PASSWORD = "123";
