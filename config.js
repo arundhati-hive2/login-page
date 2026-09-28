@@ -1,1 +1,1 @@
-const CORRECT_PASSWORD = "123";
+const CORRECT_PASSWORD = "067";
